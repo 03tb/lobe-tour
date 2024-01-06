@@ -65,15 +65,10 @@ table {
     box-sizing: border-box;
 }
 
-.body-wrapper {
-    display: grid;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-}
 
 body {
     height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -81,6 +76,13 @@ body {
 
 .logo-img {
     width: 40px;
+}
+
+.body-wrapper {
+    display: grid;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .navbar {
@@ -150,9 +152,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     text-align: center;
     gap: 70px;
+    width: 100vw;
 }
 
 .hero > h1 {
@@ -174,17 +176,17 @@ body {
 }
 
 .video-wrapper {
+    box-sizing: border-box;
     display: flex;
-    height: clamp(240px, 30vh, 300px);
-    width: 100%;
     background-color: var(--gun-metal);
-    border-radius: 50px;
-    display: flex;
+    padding: 20px;
+    border-radius: 30px;
     align-items: center;
     justify-content: center;
 }
 
 .video-wrapper > video{
+    width: 80vw;
     border-radius: 30px;
 }
 
@@ -302,19 +304,6 @@ hr {
     color: #ef4444 ;
 }
 
-@media (max-width: 425px) {
-    .video-wrapper{
-        height: clamp(240px, 30vh, 650px);
-        width: 90%;
-        border-radius: 90px;
-    }
-
-    .video-wrapper > video {
-        width:330px;
-        border-radius: 30px;
-    }
-}
-
 @media (max-width: 768px) {
 
     .toggle-button {
@@ -349,11 +338,7 @@ hr {
         display: flex;
     }
 
-    .body-wrapper {
-        width: 100vw;
-        height: 100vh;
-    }
-
+    
     .hero > h1 {
         font-size: 65px;
     }
@@ -362,29 +347,9 @@ hr {
         font-size: 25px;
     }
 
-    .video-wrapper{
-        height: clamp(240px, 30vh, 35vh);
-        width: 95%;
-        border-radius: 60px;
-    }
-
-    .video-wrapper > video {
-        height: 330px;
-    }
-
 }
 
 @media (min-width: 1024px) {
-    .video-wrapper{
-        height: 600px;
-        width: 950px;
-        border-radius: 90px;
-    }
-
-    .video-wrapper > video {
-        height: 500px;
-    }
-
     .hero > h1 {
         font-size: 65px;
         margin-top: 90px;
@@ -412,16 +377,6 @@ hr {
 
 
 @media (min-width: 1440px) {
-    .video-wrapper{
-        height: 600px;
-        width: 950px;
-        border-radius: 90px;
-    }
-
-    .video-wrapper > video {
-        height: 500px;
-    }
-
     .hero > h1 {
         font-size: 65px;
         margin-top: 90px;
