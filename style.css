@@ -1,0 +1,358 @@
+/* Fonts */
+
+@import url('https://fonts.cdnfonts.com/css/screaming-neon');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* End Fonts */
+
+/* reset css */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end reset css */
+/* Root variables */
+:root {
+    --brand-font: 'Screaming Neon', sans-serif;
+    --gun-metal: #cbd5e1;
+                                                
+}
+/* End root variables */
+
+* {
+    box-sizing: border-box;
+}
+
+.body-wrapper {
+    display: grid;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.brand-title {
+    font-family: var(--brand-font);
+    font-size: 3rem;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    gap: 70px;
+}
+
+.hero > h1 {
+    margin-top: 70px;
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: #333;
+}
+
+.hero > p {
+    margin-top: 30px;
+    font-size: 17px;
+    color: #333;
+}
+
+.hero-logo {
+    width: 90px;
+}
+
+.video-wrapper {
+    display: flex;
+    height: 240px;
+    width: 100%;
+    background-color: var(--gun-metal);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-wrapper > video {
+    width: 350px;
+    border-radius: 30px;
+}
+
+.app-link {
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.app-link > h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: #333;
+}
+
+.app-link > button {
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 170px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.app-link > button:hover {
+    background: #2563eb;
+}
+
+.ruf-logo {
+    width: 130px;
+}
+
+.ruf-logo:hover {
+    transform: scale(1.3);
+    transition: transform 0.7s ease;
+}
+
+.ruf-link {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: #333;
+    text-decoration: none;
+}
+
+footer {
+    display: grid;
+    height: 100%;
+    justify-items: center ;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links * {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+.category {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.copyright {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+hr {
+    width: 90%;
+    border-top: 1px solid #cbd5e1;
+}
+
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-icons * {
+    margin: 0;
+    padding: 0;
+}
+
+.social--icon {
+    width: 40px;
+}
+
+.disclaimer {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #ef4444 ;
+}
+
+@media (max-width: 650px) {
+    .body-wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .navbar-links li a {
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .body-wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hero > h1 {
+        font-size: 65px;
+    }
+
+    .hero > p {
+        font-size: 25px;
+    }
+}
