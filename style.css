@@ -72,6 +72,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .logo-img {
@@ -169,6 +170,7 @@ body {
     margin-top: 30px;
     font-size: 17px;
     color: #333;
+    padding: 0 20vw;
 }
 
 .hero-logo {
@@ -340,30 +342,34 @@ hr {
 
     
     .hero > h1 {
-        font-size: 65px;
+        font-size: 45px;
+        margin-top: 60px;
     }
 
     .hero > p {
-        font-size: 25px;
+        margin-top: 0;
+        font-size: 20px;
+        padding: 0 20vw;
     }
 
 }
 
 @media (min-width: 1024px) {
     .hero > h1 {
-        font-size: 65px;
-        margin-top: 90px;
+        font-size: 45px;
+        margin-top: 60px;
     }
 
     .hero > p {
         margin-top: 0;
-        font-size: 32px;
-        padding: 0 40px;
+        font-size: 20px;
+        padding: 0 20vw;
     }
 
     .navbar {
         padding: 10px;
     }
+
     .footer-links {
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
@@ -373,18 +379,22 @@ hr {
         display: flex;
     }
 
+    .video-wrapper > video{
+        width: 40vw;
+        border-radius: 30px;
+    }
 }
 
 
 @media (min-width: 1440px) {
     .hero > h1 {
-        font-size: 65px;
-        margin-top: 90px;
+        font-size: 45px;
+        margin-top: 60px;
     }
 
     .hero > p {
         margin-top: 0;
-        font-size: 32px;
+        font-size: 20px;
         padding: 0 20vw;
     }
 
@@ -401,6 +411,14 @@ hr {
         font-size: 20px;
         letter-spacing: 1px;
         font-weight: 500;
+    }
+    .video-wrapper > video{
+        width: 40vw;
+        border-radius: 30px;
+    }
+
+    .browse-section {
+        display: flex;
     }
 }
 
